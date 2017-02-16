@@ -22,7 +22,7 @@
 camel-case symbol (e.g. RequiresDependency) and validate it's a Java
 annotation."
   [k]
-  (let [name (str "clojure.maven.annotations."
+  (let [name (str "org.apache.maven.plugins.annotations."
                   (-> (name k)
                       str/capitalize
                       (str/replace
